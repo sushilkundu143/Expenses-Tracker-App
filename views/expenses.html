@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-xs-12">
+            <div class="form-group">
+                    <a ng-href="#!/newForm" type="button" class="btn btn-success btn-lg btn-block"> New Expense</a>
+                </div>
+        <ul class="list-group">
+            <li class="list-group-item text-center" ng-repeat="expense in expenses">
+                <span class="pull-left">${{expense.amount}}</span> {{expense.description}}
+
+                <a href="" class="btn btn-danger btn-s pull-right btn-separation-left"><span
+                        class="glyphicon glyphicon-trash"> </span></a>
+                <a ng-href="#!/edit/{{expense.id}}" class="btn btn-primary btn-s pull-right"><span class="glyphicon glyphicon-pencil"></span></a>
+            </li>
+        </ul>
+    </div>
+</div>
