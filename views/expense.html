@@ -1,6 +1,18 @@
-<span class="pull-left">${{expense.amount | number: 2}}</span> {{expense.description}}
-
+<div class="row">
+        <div class="col-sm-3">
+                <span class="pull-left">${{expense.amount | number: 2}}</span>
+        </div>
+        <div class="col-sm-3">
+                <span class="pull-left">${{expense.description}}</span>
+        </div>
+        <div class="col-sm-3">
+                <span
+                        class="pull-left">{{expense.date.getDate()}}-{{expense.date.getMonth()}}-{{expense.date.getFullYear()}}</span>
+        </div>
+        <div class="col-sm-3">
                 <button ng-click="remove(expense)" class="btn btn-danger btn-s pull-right btn-separation-left"><span
-                        class="glyphicon glyphicon-trash"> </span></button>
+                                class="glyphicon glyphicon-trash"> </span></button>
                 <a ng-href="#!/edit/{{expense.id}}" class="btn btn-primary btn-s pull-right"><span
-                        class="glyphicon glyphicon-pencil"></span></a>
+                                class="glyphicon glyphicon-pencil"></span></a>
+        </div>
+</div>
