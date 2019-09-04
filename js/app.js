@@ -128,7 +128,7 @@ app.controller('FormViewCtrl', function ($scope, $routeParams, $location, Expens
     $scope.titleheading = 'hello';
     $scope.entries = {};
     if (!$routeParams.id) {
-        $scope.entries.date = new Date();
+        $scope.entries = {};
     } else {
         angular.copy(Expenses.getById($routeParams.id), $scope.entries);
     }
