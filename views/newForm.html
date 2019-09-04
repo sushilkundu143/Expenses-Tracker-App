@@ -14,11 +14,11 @@
                 <input type="date" class="form-control" ng-model="entries.date" required />
             </div>
             <div class="form-group">
-                <button type="button" class="btn btn-success btn-lg btn-block" ng-click="save(user)"><span
+                <button type="button" class="btn btn-success btn-lg btn-block" ng-click="expenseForm.$valid && save(entry)"><span
                         class="glyphicon glyphicon-ok"></span> Save</button>
             </div>
             <div class="form-group">
-                <a href="" class="btn btn-default btn-lg btn-block" ><span class="glyphicon glyphicon-remove"></span>
+                <a href="#!" class="btn btn-default btn-lg btn-block" ><span class="glyphicon glyphicon-remove"></span>
                     Cancel</a>
             </div>
         </form>
